@@ -95,11 +95,6 @@ input {
     margin-bottom: 3px;
 }
 
-/* .inputcontainer{
-    position: relative;
-    transition: all 400ms;
-} */
-
 input:focus:invalid~.error {
     position: relative;
     margin: 1.5rem;
@@ -144,7 +139,6 @@ p span {
     font-size: xx-small;
     padding-bottom: 25px;
     padding-top: 3px;
-    /* padding-left: 40px; */
     text-align: center;
     color: rgb(199, 199, 199);
 
@@ -243,7 +237,6 @@ p span {
     .para3 {
         width: 10rem;
         margin-left: 65px;
-        margin-top: 1px;
     }
 
     .btn1 {
