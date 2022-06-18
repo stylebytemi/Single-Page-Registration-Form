@@ -24,7 +24,7 @@ body {
 
 .info {
     margin-right: 30px;
-    width: 25rem;
+    width: 22rem;
     align-items: left;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ form {
     cursor: pointer;
 }
 
-.btnbtn:hover{
+.btnbtn:hover {
     opacity: 0.8;
 }
 
@@ -103,14 +103,19 @@ input {
 input:focus:invalid~.error {
     position: relative;
     margin: 1.5rem;
-  }
+}
 
 input:focus:invalid {
     background: url(./images/icon-error.svg);
     background-repeat: no-repeat;
     background-position: right;
-    border-color: solid 1.5px hsl(0, 100%, 74%);
+    border: solid 1.5px hsl(0, 100%, 74%);
     background-origin: content-box;
+}
+
+input:focus{
+    border: none;
+    outline: none;
 }
 
 input:focus:invalid~.error::after {
@@ -123,7 +128,7 @@ input:focus:invalid~.error::after {
     right: 0;
     padding-bottom: 6px;
     color: hsl(0, 100%, 74%);
-  }
+}
 
 p span {
     color: hsl(0, 100%, 74%)
@@ -145,101 +150,115 @@ p span {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 880px) {
+    .info {
+        width: 18rem;
+        margin-right: 5px;
+    }
+
+    .doublediv {
+        width: 18rem;
+        margin-left: 5px;
+    }
+
+    input {
+        width: 16rem;
+    }
+
+    .btn1 {
+        width: 18rem;
+    }
+
+    .btnbtn {
+        width: 16rem;
+    }
+
+    .para2 {
+        font-size: 7px;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
     .maindiv {
         display: block;
+    }
+
+    .info {
+        width: 22rem;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .doublediv {
+        width: 24rem;
+        margin: 0%;
+        margin-top: 20px;
+    }
+
+    input {
+        width: 22rem;
+    }
+
+    .btn1 {
+        width: 24rem;
+    }
+
+    .btnbtn {
+        width: 22rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .maindiv {
+        flex-direction: column;
     }
 
     body {
         background-image: url(./images/bg-intro-mobile.png);
         background-color: hsl(0, 100%, 74%);
     }
-    .info{
+
+    .info {
         width: 18rem;
         margin: 0%;
+        text-align: center;
     }
-    .doublediv{
+
+    form {
+        height: 20rem;
+    }
+
+    .doublediv {
         width: 18rem;
         margin: 0%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    input{
+
+    .para2 {
+        width: 10rem;
+        margin-left: 60px;
+    }
+
+    .para3 {
+        width: 10rem;
+        margin-left: 65px;
+        margin-top: 1px;
+    }
+
+    .btn1 {
+        height: 3.5rem;
+    }
+
+    input {
         width: 16rem;
     }
-    .btn1{
+
+    .btn1 {
         width: 18rem;
     }
-    .btnbtn{
+
+    .btnbtn {
         width: 16rem;
-    }
-}
-
-@media only screen and (max-width: 615px) {
-    .maindiv {
-        display: block;
-    }
-    .info{
-        width: 25rem;
-        margin: 0%;
-    }
-    .doublediv{
-        width: 25rem;
-        margin: 0%;
-        margin-top: 20px;
-    }
-    input{
-        width: 23rem;
-    }
-    .btn1{
-        width: 25rem;
-    }
-    .btnbtn{
-        width: 23rem;
-    }
-}
-
-@media only screen and (max-width: 880px) {
-    .info{
-        width: 22rem;
-        margin-right: 10px;
-    }
-    .doublediv{
-        width: 22rem;
-        margin-left: 10px;
-    }
-    input{
-        width: 20rem;
-    }
-    .btn1{
-        width: 22rem;
-    }
-    .btnbtn{
-        width: 20rem;
-    }
-    .para2{
-        font-size: 7px;
-    }
-}
-
-@media only screen and (max-width: 740px){
-    .info{
-        width: 19rem;
-        margin-right: 1px;
-    }
-    .doublediv{
-        width: 19rem;
-        margin-left: 1px;
-    }
-    input{
-        width: 17rem;
-    }
-    .btn1{
-        width: 19rem;
-    }
-    .btnbtn{
-        width: 17rem;
-    }
-    .para2{
-        font-size: 7px;
     }
 }
