@@ -24,13 +24,12 @@ body {
 
 .info {
     margin-right: 30px;
-    width: 22rem;
+    width: 25rem;
     align-items: left;
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: whitesmoke;
-
 }
 
 .doublediv {
@@ -41,6 +40,7 @@ body {
 h1 {
     font-weight: 700;
     line-height: 40px;
+    font-size: 38px;
 }
 
 form {
@@ -132,6 +132,7 @@ p span {
 .para1 {
     font-weight: 400;
     font-size: small;
+    padding-top: 20px;
 }
 
 .para2 {
@@ -146,13 +147,23 @@ p span {
 
 @media only screen and (max-width: 880px) {
     .info {
-        width: 18rem;
-        margin-right: 5px;
+        width: 19rem;
+        margin-right: 4px;
     }
 
     .doublediv {
         width: 18rem;
         margin-left: 5px;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .para1{
+        margin: 0%;
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 12px;
     }
 
     input {
@@ -172,38 +183,7 @@ p span {
     }
 }
 
-
-@media only screen and (max-width: 620px) {
-    .maindiv {
-        display: block;
-    }
-
-    .info {
-        width: 22rem;
-        margin: 0%;
-        text-align: center;
-    }
-
-    .doublediv {
-        width: 24rem;
-        margin: 0%;
-        margin-top: 20px;
-    }
-
-    input {
-        width: 22rem;
-    }
-
-    .btn1 {
-        width: 24rem;
-    }
-
-    .btnbtn {
-        width: 22rem;
-    }
-}
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .maindiv {
         flex-direction: column;
     }
@@ -217,6 +197,7 @@ p span {
         width: 18rem;
         margin: 0%;
         text-align: center;
+        padding: 0%;
     }
 
     form {
@@ -226,29 +207,46 @@ p span {
     .doublediv {
         width: 18rem;
         margin: 0%;
-        margin-top: 30px;
     }
-
-    .para2 {
-        width: 10rem;
-        margin-left: 60px;
+    #mag{
+        margin-top: 30px;
     }
 
     .para3 {
         width: 10rem;
-        margin-left: 65px;
+        margin: auto;
+    }
+
+    .para2 {
+        width: 12rem;
+        font-size: 9px;
+        margin: auto;
+        text-align: center;
+    }
+    .para1{
+        margin: 0%;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 26px;
+        line-height: 32px;
     }
 
     .btn1 {
         height: 3.5rem;
+        width: 18rem;
+        text-align: center;
+        margin: auto;
+    }
+    #push{
+        margin-bottom: 15px;
     }
 
     input {
         width: 16rem;
-    }
-
-    .btn1 {
-        width: 18rem;
     }
 
     .btnbtn {
